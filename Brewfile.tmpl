@@ -1,4 +1,6 @@
 {{- if eq .location "home" }}
+
+cask_args appdir: '/Applications' 
 tap "coursier/formulas"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
@@ -94,6 +96,8 @@ vscode "usernamehw.errorlens"
 {{- end }}
 
 {{- if eq .location "work" }}
+cask_args appdir: '/Applications'
+
 tap "charmbracelet/tap"
 tap "coursier/formulas"
 tap "homebrew/cask-fonts"
